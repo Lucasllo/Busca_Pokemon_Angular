@@ -1,0 +1,12 @@
+
+<div class="card">
+  <div class="card__name">{{poke.name}}</div>
+
+  <div class="card__imageBox">
+    <img class="card__imageBox__image" src="{{poke.sprites.front_default}}" alt="">
+  </div>
+
+  <div class="card__types">
+    <span *ngFor="let t of poke.types" [ngClass]="[t.type.name, 'card__types__type']">{{t.type.name}}</span>
+  </div>
+</div>
